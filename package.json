@@ -1,0 +1,30 @@
+{
+  "name": "rickandmorty-api-clon",
+  "version": "1.0.0",
+  "description": "A rick and morty API clone",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/4lr0d7/rickandmorty-api-clon.git"
+  },
+  "keywords": [
+    "API",
+    "rest",
+    "express",
+    "nodejs",
+    "JS",
+    "mysql"
+  ],
+  "author": "Alan, Josue, Aldair",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/4lr0d7/rickandmorty-api-clon/issues"
+  },
+  "homepage": "https://github.com/4lr0d7/rickandmorty-api-clon#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

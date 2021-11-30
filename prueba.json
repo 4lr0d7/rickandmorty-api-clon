@@ -1,0 +1,475 @@
+{ 
+    "cancion":[
+        {
+            "idCancion": "1",
+            "nombreCancion": "Get Schwifty",
+            "autor": "Rick Sánchez, Morty Smith",
+            "urlFoto": "https:\/\/bit.ly\/3lmA2at",
+            "urlCancion": "https:\/\/spoti.fi\/3xymVba",
+            "genero": "EDM \/ Hip Hop"
+        },
+        {
+            "idCancion": "2",
+            "nombreCancion": "Goodbye Moonmen",
+            "autor": "Fart",
+            "urlFoto": "https:\/\/bit.ly\/315dJzj",
+            "urlCancion": "https:\/\/spoti.fi\/3rpO4vN",
+            "genero": "Acoustic"
+        },
+        {
+            "idCancion": "3",
+            "nombreCancion": "For The Damaged Coda",
+            "autor": "Blonde Redhead",
+            "urlFoto": "https:\/\/bit.ly\/3p9yC4h",
+            "urlCancion": "https:\/\/spoti.fi\/3xJRACw",
+            "genero": "Piano \/ Orchesta"
+        },
+        {
+            "idCancion": "4",
+            "nombreCancion": "Do You Feel It?",
+            "autor": "Chaos Chaos",
+            "urlFoto": "https:\/\/bit.ly\/3D4kwpS",
+            "urlCancion": "https:\/\/spoti.fi\/3o3Q7n3",
+            "genero": "Pop"
+        },
+        {
+            "idCancion": "5",
+            "nombreCancion": "Let Me Out",
+            "autor": "Justin Roiland",
+            "urlFoto": "https:\/\/bit.ly\/3xPjtct",
+            "urlCancion": "https:\/\/spoti.fi\/3o1PoD4",
+            "genero": "Rock Garage"
+        },
+        {
+            "idCancion": "6",
+            "nombreCancion": "Head Bent Over",
+            "autor": "Justin Roiland",
+            "urlFoto": "https:\/\/bit.ly\/3xziMDT",
+            "urlCancion": "https:\/\/spoti.fi\/2ZCIw5N",
+            "genero": "Hip Hop"
+        },
+        {
+            "idCancion": "7",
+            "nombreCancion": "Dont Look Back",
+            "autor": "Lauren Culjak",
+            "urlFoto": "https:\/\/bit.ly\/3o56iR4",
+            "urlCancion": "https:\/\/spoti.fi\/3E7KbiG",
+            "genero": "Pop"
+        },
+        {
+            "idCancion": "8",
+            "nombreCancion": "Glory to Glorzo",
+            "autor": "Daniel James Harmon",
+            "urlFoto": "https:\/\/bit.ly\/32KuT5I",
+            "urlCancion": "https:\/\/spoti.fi\/3pgwisp",
+            "genero": "Alternative Christian Rock"
+        },
+        {
+            "idCancion": "9",
+            "nombreCancion": "Two Crows Theme",
+            "autor": "Cecilia Gault",
+            "urlFoto": "https:\/\/bit.ly\/3D6524C",
+            "urlCancion": "https:\/\/spoti.fi\/3pfaPQf",
+            "genero": "Jpop"
+        },
+        {
+            "idCancion": "10",
+            "nombreCancion": "Human Music",
+            "autor": "Zigerions",
+            "urlFoto": "https:\/\/bit.ly\/3rpOAtI",
+            "urlCancion": "https:\/\/spoti.fi\/3E6Kom1",
+            "genero": "Pop"
+        },
+        {
+            "idCancion": "11",
+            "nombreCancion": "Main Theme",
+            "autor": "Ryan Elder",
+            "urlFoto": "https:\/\/bit.ly\/3xCXTHM",
+            "urlCancion": "https:\/\/spoti.fi\/3EcbFn8",
+            "genero": "OST"
+        },
+        {
+            "idCancion": "12",
+            "nombreCancion": "Jerrys Rick",
+            "autor": "Ryan Elder",
+            "urlFoto": "https:\/\/bit.ly\/3xCXTHM",
+            "urlCancion": "https:\/\/spoti.fi\/3I0ryiW",
+            "genero": "OST"
+        },
+        {
+            "idCancion": "13",
+            "nombreCancion": "Small intestine song",
+            "autor": "Justin Roiland",
+            "urlFoto": "https:\/\/bit.ly\/3xCXTHM",
+            "urlCancion": "https:\/\/spoti.fi\/3d2JGuj",
+            "genero": "OST"
+        },
+        {
+            "idCancion": "14",
+            "nombreCancion": "Flu Hatin Rap",
+            "autor": "Ryan Elder",
+            "urlFoto": "https:\/\/bit.ly\/3xCXTHM",
+            "urlCancion": "https:\/\/spoti.fi\/3Ia8xdW",
+            "genero": "OST"
+        },
+        {
+            "idCancion": "15",
+            "nombreCancion": "Rick Dance",
+            "autor": "Lauren Hillman",
+            "urlFoto": "https:\/\/bit.ly\/3xCXTHM",
+            "urlCancion": "https:\/\/spoti.fi\/3pwVICf",
+            "genero": "OST"
+        }
+    ],
+    "episodio": [
+        {
+            "idEpisodio": "1",
+            "temporada": "1",
+            "nombreEpisodio": "Pilot",
+            "fechaEstreno": "2013-12-02",
+            "viewer": "1.10"
+        },
+        {
+            "idEpisodio": "2",
+            "temporada": "1",
+            "nombreEpisodio": "Lawnmower Dog",
+            "fechaEstreno": "2013-12-09",
+            "viewer": "1.51"
+        },
+        {
+            "idEpisodio": "3",
+            "temporada": "1",
+            "nombreEpisodio": "Anatomy Park",
+            "fechaEstreno": "2013-12-16",
+            "viewer": "1.30"
+        },
+        {
+            "idEpisodio": "4",
+            "temporada": "1",
+            "nombreEpisodio": "M. Night Shaym-Aliens!",
+            "fechaEstreno": "2014-01-13",
+            "viewer": "1.32"
+        },
+        {
+            "idEpisodio": "5",
+            "temporada": "1",
+            "nombreEpisodio": "Meeseeks and Destroy",
+            "fechaEstreno": "2014-01-20",
+            "viewer": "1.61"
+        },
+        {
+            "idEpisodio": "6",
+            "temporada": "1",
+            "nombreEpisodio": "Rick Potion #9",
+            "fechaEstreno": "2014-01-27",
+            "viewer": "1.75"
+        },
+        {
+            "idEpisodio": "7",
+            "temporada": "1",
+            "nombreEpisodio": "Raising Gazorpazorp",
+            "fechaEstreno": "2014-03-10",
+            "viewer": "1.76"
+        },
+        {
+            "idEpisodio": "8",
+            "temporada": "1",
+            "nombreEpisodio": "Rixty Minutes",
+            "fechaEstreno": "2014-03-17",
+            "viewer": "1.48"
+        },
+        {
+            "idEpisodio": "9",
+            "temporada": "1",
+            "nombreEpisodio": "Something Ricked This Way Comes",
+            "fechaEstreno": "2014-03-24",
+            "viewer": "1.54"
+        },
+        {
+            "idEpisodio": "10",
+            "temporada": "1",
+            "nombreEpisodio": "Close Rick-counters of the Rick Kind",
+            "fechaEstreno": "2014-04-07",
+            "viewer": "1.75"
+        },
+        {
+            "idEpisodio": "11",
+            "temporada": "1",
+            "nombreEpisodio": "Ricksy business",
+            "fechaEstreno": "2014-04-14",
+            "viewer": "2.13"
+        },
+        {
+            "idEpisodio": "12",
+            "temporada": "2",
+            "nombreEpisodio": "A Rickle in Time",
+            "fechaEstreno": "2015-07-26",
+            "viewer": "2.12"
+        },
+        {
+            "idEpisodio": "13",
+            "temporada": "2",
+            "nombreEpisodio": "Mortynight Run",
+            "fechaEstreno": "2015-08-02",
+            "viewer": "2.19"
+        },
+        {
+            "idEpisodio": "14",
+            "temporada": "2",
+            "nombreEpisodio": "Auto Erotic Assimilation",
+            "fechaEstreno": "2015-08-09",
+            "viewer": "1.94"
+        },
+        {
+            "idEpisodio": "15",
+            "temporada": "2",
+            "nombreEpisodio": "Total Rickall",
+            "fechaEstreno": "2015-08-16",
+            "viewer": "1.96"
+        }
+    ],
+    "localizacion": [
+        {
+            "idLocalizacion": "1",
+            "planeta": "Tierra",
+            "dim": "C-137"
+        },
+        {
+            "idLocalizacion": "2",
+            "planeta": "Central Finite Curve",
+            "dim": "Multiverse"
+        },
+        {
+            "idLocalizacion": "3",
+            "planeta": "The Citadel",
+            "dim": "Multiverse"
+        },
+        {
+            "idLocalizacion": "4",
+            "planeta": "Tierra C-131",
+            "dim": "Cronenberged"
+        },
+        {
+            "idLocalizacion": "5",
+            "planeta": "Boob World",
+            "dim": "C-137"
+        },
+        {
+            "idLocalizacion": "6",
+            "planeta": "Blips and Chitz",
+            "dim": "Replacement"
+        },
+        {
+            "idLocalizacion": "7",
+            "planeta": "Mortytown",
+            "dim": "Unknown"
+        },
+        {
+            "idLocalizacion": "8",
+            "planeta": "Nuptia 4",
+            "dim": "Replacement"
+        },
+        {
+            "idLocalizacion": "9",
+            "planeta": "Galactic Federation",
+            "dim": "Replacement"
+        },
+        {
+            "idLocalizacion": "10",
+            "planeta": "Shoneys",
+            "dim": "Unknown"
+        },
+        {
+            "idLocalizacion": "11",
+            "planeta": "Tierra",
+            "dim": "C-36"
+        },
+        {
+            "idLocalizacion": "12",
+            "planeta": "Unknown",
+            "dim": "Unknown"
+        }
+    ],
+    "personaje": [
+        {
+            "idPersonaje": "1",
+            "nombrePersonaje": "Morty Smith",
+            "actorDoblaje": "Justin Roiland",
+            "epAparicion": "S1 E3",
+            "ultAparicion": "S5 E10",
+            "estatura": "1.600",
+            "peso": "54.000",
+            "edad": "15",
+            "urlFoto": "https:\/\/bit.ly\/3G4OHiF",
+            "idLocalizacion": "1"
+        },
+        {
+            "idPersonaje": "2",
+            "nombrePersonaje": "Rick Sánchez",
+            "actorDoblaje": "Justin Roiland",
+            "epAparicion": "S1 E3",
+            "ultAparicion": "S5 E10",
+            "estatura": "1.980",
+            "peso": "86.000",
+            "edad": "70",
+            "urlFoto": "https:\/\/bit.ly\/3D7lr90",
+            "idLocalizacion": "1"
+        },
+        {
+            "idPersonaje": "3",
+            "nombrePersonaje": "Beth Smith",
+            "actorDoblaje": "Sarah Chalke",
+            "epAparicion": "S1 E6",
+            "ultAparicion": "S5 E10",
+            "estatura": "1.740",
+            "peso": "62.000",
+            "edad": "38",
+            "urlFoto": "https:\/\/bit.ly\/3E8REOn",
+            "idLocalizacion": "1"
+        },
+        {
+            "idPersonaje": "4",
+            "nombrePersonaje": "Summer Smith",
+            "actorDoblaje": "Spencer Grammer",
+            "epAparicion": "S1 E6",
+            "ultAparicion": "S5 E10",
+            "estatura": "1.700",
+            "peso": "60.000",
+            "edad": "18",
+            "urlFoto": "https:\/\/bit.ly\/3G288Iy",
+            "idLocalizacion": "1"
+        },
+        {
+            "idPersonaje": "5",
+            "nombrePersonaje": "Jerry Smith",
+            "actorDoblaje": "Chris Parnell",
+            "epAparicion": "S1 E6",
+            "ultAparicion": "S5 E10",
+            "estatura": "1.780",
+            "peso": "68.000",
+            "edad": "35",
+            "urlFoto": "https:\/\/bit.ly\/3o4VvGN",
+            "idLocalizacion": "1"
+        },
+        {
+            "idPersonaje": "6",
+            "nombrePersonaje": "Jessica",
+            "actorDoblaje": "Kari Wahlgren",
+            "epAparicion": "S1 E1",
+            "ultAparicion": "S5 E1",
+            "estatura": "1.600",
+            "peso": "55.000",
+            "edad": "14",
+            "urlFoto": "https:\/\/bit.ly\/3rn5B85",
+            "idLocalizacion": "1"
+        },
+        {
+            "idPersonaje": "7",
+            "nombrePersonaje": "Mr. Goldenfold",
+            "actorDoblaje": "Brandon Johnson",
+            "epAparicion": "S1 E1",
+            "ultAparicion": "S4 E8",
+            "estatura": "1.700",
+            "peso": "85.000",
+            "edad": "48",
+            "urlFoto": "https:\/\/bit.ly\/3I1nu20",
+            "idLocalizacion": "1"
+        },
+        {
+            "idPersonaje": "8",
+            "nombrePersonaje": "Director Vagina",
+            "actorDoblaje": "Phil Hendrie",
+            "epAparicion": "S1 E1",
+            "ultAparicion": "S3 E9",
+            "estatura": "1.720",
+            "peso": "86.000",
+            "edad": "65",
+            "urlFoto": "https:\/\/bit.ly\/3D2EcdI",
+            "idLocalizacion": "1"
+        },
+        {
+            "idPersonaje": "9",
+            "nombrePersonaje": "Brad",
+            "actorDoblaje": "Echo Kellum",
+            "epAparicion": "S1 E6",
+            "ultAparicion": "S5 E5",
+            "estatura": "1.700",
+            "peso": "65.000",
+            "edad": "15",
+            "urlFoto": "https:\/\/bit.ly\/3o2teRg",
+            "idLocalizacion": "1"
+        },
+        {
+            "idPersonaje": "10",
+            "nombrePersonaje": "Snuffles",
+            "actorDoblaje": "Rob Paulsen",
+            "epAparicion": "S1 E2",
+            "ultAparicion": "S1 E2",
+            "estatura": "0.500",
+            "peso": "10.000",
+            "edad": "1",
+            "urlFoto": "https:\/\/bit.ly\/3HYRdZj",
+            "idLocalizacion": "1"
+        },
+        {
+            "idPersonaje": "11",
+            "nombrePersonaje": "Evil Morty",
+            "actorDoblaje": "Justin Roiland",
+            "epAparicion": "S1 E10",
+            "ultAparicion": "S5 E10",
+            "estatura": "1.600",
+            "peso": "54.000",
+            "edad": "15",
+            "urlFoto": "https:\/\/bit.ly\/3FZTzp3",
+            "idLocalizacion": "6"
+        },
+        {
+            "idPersonaje": "12",
+            "nombrePersonaje": "Diane Sanchez",
+            "actorDoblaje": "Kari Wahigren",
+            "epAparicion": "S3 E1",
+            "ultAparicion": "S5 E10",
+            "estatura": "1.900",
+            "peso": "70.000",
+            "edad": "38",
+            "urlFoto": "https:\/\/bit.ly\/3pcD2av",
+            "idLocalizacion": "1"
+        },
+        {
+            "idPersonaje": "13",
+            "nombrePersonaje": "Mr Poopybutthole",
+            "actorDoblaje": "Justin Roiland",
+            "epAparicion": "S2 E4",
+            "ultAparicion": "S5 E10",
+            "estatura": "1.000",
+            "peso": "38.000",
+            "edad": "30",
+            "urlFoto": "https:\/\/bit.ly\/3Ih9QYT",
+            "idLocalizacion": "1"
+        },
+        {
+            "idPersonaje": "14",
+            "nombrePersonaje": "Planetina",
+            "actorDoblaje": "Alison Brie",
+            "epAparicion": "S5 E3",
+            "ultAparicion": "S5 E3",
+            "estatura": "2.000",
+            "peso": "55.000",
+            "edad": "16",
+            "urlFoto": "https:\/\/bit.ly\/3EbTUEE",
+            "idLocalizacion": "1"
+        },
+        {
+            "idPersonaje": "15",
+            "nombrePersonaje": "Abrodolph Lincoler",
+            "actorDoblaje": "Maurice LaMarche",
+            "epAparicion": "S1 E11",
+            "ultAparicion": "S1 E11",
+            "estatura": "1.000",
+            "peso": "38.000",
+            "edad": "30",
+            "urlFoto": "https:\/\/bit.ly\/3G2oMIq",
+            "idLocalizacion": "11"
+        }
+    ]
+}

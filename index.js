@@ -1,122 +1,115 @@
 const express = require('express');
 const app = express();
 const { personaje, cancion, episodio, localizacion } = require('./prueba.json');
+//Exportar BodyParser
+const bodyParser = require('body-parser');
+//Use: Todas las peticiones que entren al servidor se les aplicará una función.
+// Usa capas para procesar la información que entren al servidor
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}))
+
+/*
+VERBOS PRINCIPALES en HTTP:
+- GET: Obtener Recursos
+- POST: Almacenar / Crear recursos
+- PATCH: Modificar una parte de un recurso
+- PUT: Modificar un Recurso
+- DELETE: Eliminar un Recurso 
+*/
 
 app.get("/", (req, res, next) => {
-    res.status(200);
-    res.send("Bienvenido al API de Rick y Morty");
+    return res.status(200).send("Bienvenido al API de Rick y Morty");
 }); 
 
+//POST
+app.post("/personaje",(req, res, next)=>{
+        return res.status(200).send(req.body)
+})
+
 app.get("/personaje", (req, res, next) => {
-    res.status(200); 
-    res.send(personaje);
+    return res.status(200).send(personaje);
 });
 
 app.get("/personaje/:id([0-9]{1,2})", (req, res, next) => {
     const id = req.params.id -1;
     if(id >= 0 && id < 15) {
-        res.status(200); 
-        res.send(personaje[req.params.id -1]);
+        return res.status(200).send(personaje[req.params.id -1]);
     } else {
         res.status(404);
         res.send("Personaje no encontrado");
     }
 });
 
-app.get("/personaje/:name", (req, res, next) => {
+app.get("/personaje/:name([A-Za-z]+)", (req, res, next) => {
     const nombrePersonaje = req.params.name;
-    for(i = 0; i < personaje.length; i++) {
-        if(personaje[i].nombrePersonaje == nombrePersonaje) {
-            res.status(200);
-            res.send(personaje[i]);
-        }
-    } 
-    res.status(404);
-    res.send("Personaje no encontrado");
+    const character = personaje.filter((p)=>{
+        return (p.nombrePersonaje.toUpperCase() == nombrePersonaje.toUpperCase()) ? p : null;
+    })
+    return (character.length > 0) ? res.status(200).send(character) : res.status(404).send("Personaje no Encontrado")
 });
 
 app.get("/cancion", (req, res, next) => {
-    res.status(200); 
-    res.send(cancion);
+    return res.status(200).send(cancion);
 });
 
 app.get("/cancion/:id([0-9]{1,2})", (req, res, next) => {
     const id = req.params.id -1;
     if(id >= 0 && id < 15) {
-        res.status(200); 
-        res.send(cancion[req.params.id -1]);
+        return res.status(200).send(cancion[req.params.id -1]);
     } else {
-        res.status(404);
-        res.send("Canción no encontrada");
+        return res.status(404).send("Canción no encontrada");
     }
 });
 
-app.get("/cancion/:name", (req, res, next) => {
+app.get("/cancion/:name([A-Za-z]+)", (req, res, next) => {
     const nombreCancion = req.params.name;
-    for(i = 0; i < cancion.length; i++) {
-        if(cancion[i].nombreCancion == nombreCancion) {
-            res.status(200);
-            res.send(cancion[i]);
-        }
-    } 
-    res.status(404);
-    res.send("Canción no encontrada");
+    const nameSong  = cancion.filter((c) =>{
+        return (c.nombreCancion.toUpperCase() == nombreCancion.toUpperCase()) ? c : null;
+    })
+    return (nameSong.length > 0) ? res.status(200).send(nameSong) : res.status(404).send("Canción no encontrada")
 });
 
 app.get("/episodio", (req, res, next) => {
-    res.status(200); 
-    res.send(episodio);
+    return res.status(200).send(episodio);
 });
 
 app.get("/episodio/:id([0-9]{1,2})", (req, res, next) => {
     const id = req.params.id -1;
     if(id >= 0 && id < 15) {
-        res.status(200); 
-        res.send(episodio[req.params.id -1]);
+        return res.status(200).send(episodio[req.params.id -1]);
     } else {
-        res.status(404);
-        res.send("Episodio no encontrado");
+        return res.status(404).send("Episodio no encontrado");
     }
 });
 
-app.get("/episodio/:name", (req, res, next) => {
+app.get("/episodio/:name([A-Za-z]+)", (req, res, next) => {
     const nombreEpisodio = req.params.name;
-    for(i = 0; i < episodio.length; i++) {
-        if(episodio[i].nombreEpisodio == nombreEpisodio) {
-            res.status(200);
-            res.send(episodio[i]);
-        }
-    } 
-    res.status(404);
-    res.send("Episodio no encontrado");
+    const ep = episodio.filter((e)=>{
+        return (e.nombreEpisodio.toUpperCase() == nombreEpisodio.toUpperCase()) ? e : null;
+    })
+    return (ep.length > 0) ? res.status(200).send(ep) : res.status(404).send("Episodio no encontrado");
+
 });
 
 app.get("/localizacion", (req, res, next) => {
-    res.status(200); 
-    res.send(localizacion);
+    return res.status(200).send(localizacion);
 });
 
 app.get("/localizacion/:id([0-9]{1,2})", (req, res, next) => {
     const id = req.params.id -1;
     if(id >= 0 && id < 15) {
-        res.status(200); 
-        res.send(localizacion[req.params.id -1]);
+        return res.status(200).send(localizacion[req.params.id -1]);
     } else {
-        res.status(404);
-        res.send("Localización no encontrada");
+        return res.status(404).send("Localización no encontrada");
     }
 });
 
-app.get("/localizacion/:name", (req, res, next) => {
+app.get("/localizacion/:name([A-Za-z]+)", (req, res, next) => {
     const planeta = req.params.name;
-    for(i = 0; i < localizacion.length; i++) {
-        if(localizacion[i].planeta == planeta) {
-            res.status(200);
-            res.send(localizacion[i]);
-        }
-    } 
-    res.status(404);
-    res.send("Localización no encontrada");
+    const localiz = localizacion.filter((pl)=>{
+     return (pl.planeta.toUpperCase() == planeta.toUpperCase()) ? pl: null;
+    });
+    return (localiz.length > 0) ? res.status(200).send(localiz) : res.status(404).send("Localización no encontrada");
 });
 
 

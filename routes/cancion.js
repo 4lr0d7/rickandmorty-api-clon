@@ -4,24 +4,26 @@ const db = require('../config/database');
 
 song.get("/", async (req, res, next) => {
     const sng = await db.query("SELECT * FROM cancion");
-    return res.status(200).json(sng);
+    return res.status(200).json({code: 1, message: sng});
 });
 
-song.get("/:id([0-9]{1,2})", (req, res, next) => {
-    const id = req.params.id - 1;
-    if (id >= 0 && id < 15) {
-        return res.status(200).send(cancion[req.params.id - 1]);
+song.get("/:id([0-9]{1,2})", async (req, res, next) => {
+    const id = req.params.id;
+    if (id > 0 && id <= 15) {
+        const sng = await db.query("SELECT * FROM cancion WHERE idCancion=" + id + ";");
+        return res.status(200).json({code: 1, message: sng});
     } else {
         return res.status(404).send("Canción no encontrada");
     }
 });
 
-song.get("/:name([A-Za-z]+)", (req, res, next) => {
+song.get("/:name", async (req, res, next) => {
     const nombreCancion = req.params.name;
-    const nameSong = cancion.filter((c) => {
-        return (c.nombreCancion.toUpperCase() == nombreCancion.toUpperCase()) ? c : null;
-    })
-    return (nameSong.length > 0) ? res.status(200).send(nameSong) : res.status(404).send("Canción no encontrada")
+    const sng = await db.query("SELECT * FROM cancion WHERE nombreCancion='" + nombreCancion + "';");
+    if(sng.length > 0){
+        return res.status(200).json({code: 1, message: sng});
+    }
+    return res.status(404).send({code:404, message: "Cancion no encontrada"});
 });
 
 module.exports = song;

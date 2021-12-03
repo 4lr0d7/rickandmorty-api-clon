@@ -7,22 +7,23 @@ character.get("/", async (req, res, next) => {
     return res.status(200).send(chrctr);
 });
 
-character.get("/:id([0-9]{1,2})", (req, res, next) => {
-    const id = req.params.id - 1;
-    if (id >= 0 && id < 15) {
-        return res.status(200).send(personaje[req.params.id - 1]);
+character.get("/:id([0-9]{1,2})", async (req, res, next) => {
+    const id = req.params.id;
+    if (id > 0 && id <= 15) {
+        const chrctr = await db.query("SELECT * FROM personaje WHERE idPersonaje=" + id + ";");
+        return res.status(200).json({code: 1, message: chrctr});
     } else {
-        res.status(404);
-        res.send("character no encontrado");
+        return res.status(404).send("Personaje no encontrado");
     }
 });
 
-character.get("/:name([A-Za-z]+)", (req, res, next) => {
+character.get("/:name", async (req, res, next) => {
     const nombrecharacter = req.params.name;
-    const personaje = personaje.filter((p) => {
-        return (p.nombrecharacter.toUpperCase() == nombrecharacter.toUpperCase()) ? p : null;
-    })
-    return (personaje.length > 0) ? res.status(200).send(personaje) : res.status(404).send("character no Encontrado")
+    const chrctr = await db.query("SELECT * FROM personaje WHERE nombrePersonaje='" + nombrecharacter + "';");
+    if(chrctr.length > 0){
+        return res.status(200).json({code: 1, message: chrctr});
+    }
+    return res.status(404).send({code:404, message: "Personaje no encontrado"});
 });
 
 module.exports = character;

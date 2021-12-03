@@ -7,22 +7,23 @@ episode.get("/", async (req, res, next) => {
     return res.status(200).send(psd);
 });
 
-episode.get("/:id([0-9]{1,2})", (req, res, next) => {
-    const id = req.params.id - 1;
-    if (id >= 0 && id < 15) {
-        return res.status(200).send(episodio[req.params.id - 1]);
+episode.get("/:id([0-9]{1,2})", async (req, res, next) => {
+    const id = req.params.id;
+    if (id > 0 && id <= 15) {
+        const psd = await db.query("SELECT * FROM episodio WHERE idEpisodio=" + id + ";");
+        return res.status(200).json({code: 1, message: psd});
     } else {
-        return res.status(404).send("episode no encontrado");
+        return res.status(404).send("Episodio no encontrado");
     }
 });
 
-episode.get("/:name([A-Za-z]+)", (req, res, next) => {
+episode.get("/:name", async (req, res, next) => {
     const nombreEpisodio = req.params.name;
-    const ep = episodio.filter((e) => {
-        return (e.nombreEpisodio.toUpperCase() == nombreEpisodio.toUpperCase()) ? e : null;
-    })
-    return (ep.length > 0) ? res.status(200).send(ep) : res.status(404).send("episode no encontrado");
-
+    const psd = await db.query("SELECT * FROM episodio WHERE nombreEpisodio='" + nombreEpisodio + "';");
+    if(psd.length > 0){
+        return res.status(200).json({code: 1, message: psd});
+    }
+    return res.status(404).send({code:404, message: "Episodio no encontrado"});
 });
 
 module.exports = episode;

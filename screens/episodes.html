@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/header.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="shortcut icon" href="../img/portalRM.png" />
+    <script>
+        $(document).ready(function(){
+            $("#icon").click(function(){
+                $("ul").toggleClass("show")
+            })
+        })
+    </script>
+    <title>API: Episodios</title>
+</head>
+<body>
+    <nav>
+        <img src="../img/RickAndMorty-Logo.png" alt="" class = "logo">
+        <ul>
+            <li><a href="../index.html">INICIO</a></li>
+            <li><a href="./characters.html">PERSONAJES</a></li>
+            <li><a class = "active" href="#">EPISODIOS</a></li>
+            <li><a href="./songs.html">CANCIONES</a></li>
+        </ul>
+        <label for="" id="icon">
+            <i>☰</i>
+        </label>
+    </nav>
+</body>
+</html>

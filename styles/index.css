@@ -1,0 +1,65 @@
+.flex-container{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: stretch;
+  /* background-color: rgb(92, 112, 133); */
+}
+
+.flex-container > div {
+    /* background-color: #f1f1f1; */
+    width: 50%;
+    height: 525px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    align-items: center;
+  }
+  div > .divBienvenida{
+    display: flex;
+    justify-content: center;
+  }
+  div > .divBienvenida > .bloque{
+      width: 15px;
+      height: 165px;
+      background-color: #D8E9A8;
+  }
+
+  div > .divBienvenida > .txtBienvenida{
+    margin-left: 20px;
+    margin-top: 20px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+  }
+  div > .divBienvenida > .txtBienvenida > p{
+    font-family: 'Roboto', sans-serif;
+    margin-top: -35px;
+    font-size: 25px;
+    color: #eee;
+  }
+  div > .divBienvenida > .txtBienvenida > .txtVerde{
+    color: #00AB6B;
+      
+  }
+  div > .divImage{
+    display: flex;
+    justify-content: center;
+  }
+  div > .divImage > .imgRickMortyPortal{
+    width: 400px;
+    height: 400px;
+  }
+
+@media(max-width: 909px){
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .flex-container >div{
+        width: 97%;
+    }
+
+}

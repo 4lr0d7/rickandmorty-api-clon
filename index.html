@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenidos a: Rick & Morty - API</title>
+    <link rel="stylesheet" href="./styles/header.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/portalRM.png" />
+    <script>
+        $(document).ready(function(){
+            $("#icon").click(function(){
+                $("ul").toggleClass("show")
+            })
+        })
+    </script>
+</head>
+<body>
+    <nav>
+        <img src="./img/RickAndMorty-Logo.png" alt="" class = "logo">
+        <ul>
+            <li><a class = "active" href="">INICIO</a></li>
+            <li><a href="./screens/characters.html">PERSONAJES</a></li>
+            <li><a href="./screens/episodes.html">EPISODIOS</a></li>
+            <li><a href="./screens/songs.html">CANCIONES</a></li>
+        </ul>
+        <label for="" id="icon">
+            <i>☰</i>
+        </label>
+    </nav>
+    <div class = "flex-container">
+        <div class = "divBienvenida">
+            <div class="bloque"></div>
+            <div class="txtBienvenida">
+                <p>BIENVENIDO</p>
+                <p>A LA API DE</p>
+                <p class = "txtVerde">RICK & MORTY</p>
+            </div>
+        </div>
+        <div class = "divImage">
+           <img src="./img/Rick&Morty-Portal.png" alt="" class = "imgRickMortyPortal">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,18 +1,19 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
     text-decoration: none;
     list-style: none;
 }
 body{
-background-color: #1B1919;
-font-family: monserrat;
+    background-color: #1B1919;
 }
 
 nav{
     height: 80px;
     width: 100%;
     background: #018f5b;
+    margin-bottom: 32px;
 }
 img.logo{
     padding: 0 50px;

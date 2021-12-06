@@ -6,7 +6,8 @@ const pool = mysql.createPool({
     host: 'localhost',
     user: 'root',
     password: '',
-    database: 'randm'
+    database: 'randm',
+    port: 3307,             // Puse este puerto para solucionar un error con mi XAMPP
 });
 
 pool.query = util.promisify(pool.query);

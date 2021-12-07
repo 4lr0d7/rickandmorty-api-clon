@@ -4,7 +4,7 @@ const db = require('../config/database');
 
 song.get("/", async (req, res, next) => {
     const sng = await db.query("SELECT * FROM cancion");
-    return res.status(200).json({code: 1, message: sng});
+    return res.status(200).json({code:200, message: sng});
 });
 
 song.get("/:id([0-9]{1,2})", async (req, res, next) => {

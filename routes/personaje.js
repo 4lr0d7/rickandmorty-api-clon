@@ -4,7 +4,7 @@ const db = require('../config/database');
 
 character.get("/", async (req, res, next) => {
     const chrctr = await db.query("SELECT * FROM personaje")
-    return res.status(200).send(chrctr);
+    return res.status(200).send({code: 200, message: chrctr});
 });
 
 character.get("/:id([0-9]{1,2})", async (req, res, next) => {

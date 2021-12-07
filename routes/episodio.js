@@ -4,7 +4,7 @@ const db = require('../config/database');
 
 episode.get("/", async (req, res, next) => {
     const psd = await db.query("SELECT * FROM episodio");
-    return res.status(200).send(psd);
+    return res.status(200).send({code: 200, message: psd});
 });
 
 episode.get("/:id([0-9]{1,2})", async (req, res, next) => {

@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const morgan = require('morgan');
+const path = require('path')
 // const {cancion, episodio, localizacion} = require("./routes/rickAndMorty")
 const character = require('./routes/personaje')
 const song = require('./routes/cancion')
@@ -23,13 +24,18 @@ VERBOS PRINCIPALES en HTTP:
 
 //Main
 app.get("/", (req, res, next) => {
-    return res.status(200).send("Bienvenido al API de Rick y Morty");
-}); 
+    return res.sendFile(path.resolve(__dirname, 'index.html'))
+});
+
+app.use(function(req,res,next){
+    res.header("Access-Control-Allow-Origin", "*")
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
+    next()
+})
 
 app.use("/character", character);
 app.use("/song", song);
 app.use("/episode", episode);
-app.use("/location", location);
 
 //Control de rutas no encontradas
 app.use((req, res, next) => {

@@ -61,5 +61,7 @@
     .flex-container >div{
         width: 97%;
     }
-
+    .divBienvenida {
+      margin-top: 48px;
+    }
 }

@@ -105,3 +105,9 @@ nav #icon{
         left: 0;
     }
 }
+
+@media (max-width: 425px) {
+    nav{
+        margin-bottom: 12px;
+    }
+}

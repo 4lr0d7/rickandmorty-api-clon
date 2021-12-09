@@ -1,6 +1,6 @@
 window.onload = init;
 var headers = {"Access-Control-Allow-Origin" : null}
-var url = "http://localhost:3000"
+var url = "https://rick-and-morty--api.herokuapp.com"
 
 function init () {
     loadPersonajes()

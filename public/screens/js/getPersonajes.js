@@ -23,14 +23,14 @@ function displayPersonajes(personaje){
         </div>
         <div class="card-info">
             <p class="name">${personaje[i].nombrePersonaje}</p>
-            <p class="dubbingActor">${personaje[i].actorDoblaje}</p>
-            <p class="firstAppearance">Primera aparición: ${personaje[i].epAparicion}</p>
-            <p class="lastAppearance">Ultima aparición: ${personaje[i].ultAparicion}</p>
+            <p class="dubbingActor"><b>Actor de dobleje:</b> ${personaje[i].actorDoblaje}</p>
+            <p class="firstAppearance"><b>Primera aparición:</b> ${personaje[i].epAparicion}</p>
+            <p class="lastAppearance"><b>Ultima aparición:</b> ${personaje[i].ultAparicion}</p>
         
             <div class="card-info-horizontal">
-                <p class="age">Edad: ${personaje[i].edad}</p>
-                <p class="height">Estatura: ${personaje[i].estatura} m</p>
-                <p class="weight">Peso: ${personaje[i].peso} kg</p>
+                <p class="age"><b>Edad</b> ${personaje[i].edad}</p>
+                <p class="height"><b>Estatura</b> ${personaje[i].estatura} m</p>
+                <p class="weight"><b>Peso</b> ${personaje[i].peso} kg</p>
             </div>
         </div>
     </div>`

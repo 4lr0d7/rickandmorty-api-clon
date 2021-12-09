@@ -37,6 +37,9 @@ app.use("/character", character);
 app.use("/song", song);
 app.use("/episode", episode);
 
+// Archivos estáticos
+app.use(express.static(__dirname + '/public'));
+
 //Control de rutas no encontradas
 app.use((req, res, next) => {
     return res.status(404).json({code: 404, message: "URL no encontrada"})

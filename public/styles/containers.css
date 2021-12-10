@@ -1,0 +1,157 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+main {
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.card-container {
+    display: flex;
+    width: 490px;
+    height: 200px;
+    margin: 10px;
+    background-color: #3c3e44;
+    border-radius: 8px;
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+}
+.card-image img{
+    width: 100%;
+    height: 200px;
+    object-fit:cover;
+    border-radius: 8px 0px 0px 8px;
+}
+.card-info {
+    display: flex;
+    width: 100%;
+    margin: 0px 24px;
+    flex-direction: column;
+    line-height: 20px;
+}
+.card-info p b{
+    color: #9e9e9e;
+    font-size: 14px;
+}
+.card-info p {
+    color: #f5f5f5;
+    font-size: 14px;
+}
+.card-info-horizontal {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.card-info .age, .height, .weight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-info .name {
+    color: #f5f5f5;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 18px 0px;
+}
+.card-episode {
+    width: 360px;
+    height: 160px;
+}
+.btn-spotify {
+    display: flex;
+    width: 180px;
+    padding: 8px;
+    margin-top: 22px;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    color: #f5f5f5;
+    border: none;
+    border-radius: 12px;
+    background-color: green;
+}
+.icon-spotify {
+    width: 28px;
+    height: 28px;
+    margin-right: 12px;
+    background-image: url(../img/spotify-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.btn-spotify .link {
+    color: white;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+@media (max-width: 320px) {
+    .card-container {
+        width: 90%;
+        height: 250px;
+    }
+    .card-episode {
+        width: 360px;
+        height: 180px;
+    }
+    .card-image img{
+        width: 120px;
+        height: 250px;
+    }
+    .card-info {
+        display: flex;
+        width: 100%;
+        margin: 0px 4px;
+        flex-direction: column;
+    }
+    .card-info-horizontal {
+        display: flex;
+        flex-direction: column;
+        margin-top: 4px;
+        justify-content: space-between;
+    }
+    .card-info .age, .height, .weight {
+        display: inline-block;
+    }
+    .card-song {
+        height: 200px;
+    }
+    .card-song img {
+        height: 200px;
+    }
+    .btn-spotify {
+        display: flex;
+        width: 120px;
+        padding: 6px;
+        margin-top: 22px;
+        align-self: center;
+        justify-content: center;
+        align-items: center;
+        color: #f5f5f5;
+        border: none;
+        border-radius: 8px;
+        background-color: green;
+    }
+}
+
+@media (max-width: 375px) {
+    .card-container {
+        width: 95%;
+    }
+    .card-image img{
+        width: 120px;
+    }
+    .card-info {
+        display: flex;
+        width: 100%;
+        margin: 0px 24px;
+        flex-direction: column;
+    }
+    .card-info-horizontal {
+        display: flex;
+        justify-content: space-between;
+    }
+}

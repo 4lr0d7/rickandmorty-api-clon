@@ -1,6 +1,6 @@
 window.onload = init;
 var headers = {"Access-Control-Allow-Origin" : null}
-var url = "http://localhost:3000"
+var url = "https://rick-and-morty--api.herokuapp.com"
 
 function init () {
     loadCanciones()
@@ -17,7 +17,7 @@ function loadCanciones(){
 function displayCanciones(cancion){
     var body = document.querySelector("main")
     for(var i = 0; i < cancion.length; i++){
-        body.innerHTML += `<div class="card-container">
+        body.innerHTML += `<div class="card-container card-song">
         <div class="card-image">
             <img src="${cancion[i].urlFoto}" alt="image song">
         </div>
